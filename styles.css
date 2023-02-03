@@ -32,8 +32,7 @@ body {
   }
   
   
-img{  
-    user-drag: none;  
+  img{  
     user-select: none;
     -moz-user-select: none;
     -webkit-user-drag: none;
@@ -42,7 +41,8 @@ img{
  }
 
 
-  body {
+body {
+user-select: none;
   height: 100vh;
   width: 100vw;
   background-color: black;
@@ -84,6 +84,8 @@ h1{
     height: 100px;
     opacity: 1;
     z-index: 2;
+    margin-left: 20px;
+    
   }
   
   #navbar ul {
@@ -107,20 +109,26 @@ h1{
   .dropdown {
     position: absolute;
     right: 100px;
-    top: 50px;
+    top: 35px;
     z-index: 2;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+
+}
+
+#Options{
+    font-size: 40px;
 }
   
 .dropdown-content {
     display: none;
-    right: -20px;
-    top: 40px;
+    right: 10px;
+    top: 70px;
     position: absolute;
     background-color: black;
     border: 1px solid white;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     width: 300x;
-    height: 190px;
+    height: 200px;
     border-radius: 10px;
     z-index: 3;
     text-align: center;
