@@ -10,14 +10,13 @@
     <body>
 
         <section id = "header">
-            <a href ="#"><img src="Images/Abacus.png" class="logo" alt="abacus"></a>
+            <a href ="#"><img src="Images/Abacus.png" class="logo" alt="abacus" user-select: none; draggable="false" onmousedown="return false"></a>
 
         <div class="dropdown">
             <a>Options</a>
             <div class="dropdown-content">
               <a href="Home.html">Home</a>
               <a href="Catalogue.html">Shop</a>
-              <a href="MarketPlace.html">Market Place</a>
               <a href="Inspiration.html">Inspirations</a>
               <a href="AboutUs.html">About Us</a>
             </div>
@@ -25,15 +24,18 @@
         </section>
 
 
-        <div class = "track-image">
-                <img class = "image" src="Images/Varmblixt.png" height="666.98" width="499.992">
-                <img class = "image" src="Images/Photo2.png">
-                <img class = "image" src="Images/photo3.png">
-                <img class = "image" src="Images/photo4.png">
-                <img class = "image" src="Images/photo.png">
-                <p>This is a new</p>
-        </div>
+        <div id="image-track" data-mouse-down-at="0" data-prev-percentage="0">
+            <img class="image" src="Images/Varmblixt.png" draggable="false" />
+            <img class="image" src="Images/Photo2.png" draggable="false" />
+            <img class="image" src="Images/photo3.png" draggable="false" />
+            <img class="image" src="Images/photo4.png" draggable="false" />
+            <img class="image" src="Images/photo5.png" draggable="false" />
+            <img class="image" src="Images/photo6.png" draggable="false" />
+            <img class="image" src="Images/photo7.png" draggable="false" />
+          </div>
 
-        <body class=""></body>
+
+        <script src="script.js"></script>
     </body>
+
 </html>
