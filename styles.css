@@ -1,12 +1,7 @@
-body{  
-    background-color: rgb(0, 0, 0);
-    width: 100vw;
-    height: 100vh;
-    margin: 0rem;
-    overflow: hidden;
-}
 
-body {
+
+
+#body {
     height: 100vh;
     width: 100vw;
     background-color: black;
@@ -43,6 +38,7 @@ img{
  .text2{
     color: white;
     font-size: 8vh;
+    text-align: left;
  }
 
 
@@ -54,7 +50,9 @@ user-select: none;
   width: 100vw;
   background-color: black;
   margin: 0rem;
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  scrollbar-width: none;
 }
 
 
@@ -184,3 +182,132 @@ h1{
     background-repeat: no-repeat;
 }
 
+#fadeIn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 3s ease-in-out;
+  animation: fadeIn 3s ease-in-out;
+  opacity: 1;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.header-image {
+  max-width: 30%;
+  height: auto;
+  width: auto;
+  display: block;
+  margin-bottom: 20px;
+  object-position: center;
+}
+
+h2 {
+  text-align: center;
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: white;
+}
+
+p {
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.desc1 {
+  font-size: x-large;
+}
+
+::-webkit-scrollbar {
+  width: 0.2em;
+  background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #6a6a6a;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  background-color: #F5F5F5;
+}
+
+.desc2 {
+  font-size: x-large;
+  text-align: left;
+  margin-top: 150px;
+  margin-left: 50px;
+}
+
+.desc3 {
+  font-size: x-large;
+  text-align: left;
+  margin-top: 150px;
+  margin-right: 50px;
+}
+
+.desc4 {
+  font-size: xx-large;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img2 {
+  width: 35%;
+  height: 35%;
+  margin-right: 20px;
+  margin-left: 50px;
+  margin-top: 150px;
+}
+
+.container2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img3 {
+  width: 35%;
+  height: 35;
+  margin-right: 50px;
+  margin-left: 20px;
+  margin-top: 150px;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  font-size: 16px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 20px;
+}
+
+footer a:hover {
+  color: #ccc;
+}

@@ -1,6 +1,6 @@
 # Asg2-Aaron-Darance
 
-# Project AKEI
+# Project Abacus
 
 This Project showcases many furnitures desinged by IKEA, a Swedish multinational conglomerate based in the Netherlands that designs and sells ready-to-assemble furniture, kitchen appliances, decoration, home accessories, and various other goods and home services.
 
