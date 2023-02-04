@@ -41,6 +41,9 @@ img{
     text-align: left;
  }
 
+ header, body {
+  overscroll-behavior-x: none;
+}
 
 
 
