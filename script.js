@@ -1,5 +1,4 @@
 const track = document.getElementById("image-track");
-window.addEventListener( 'touchmove', function() {})
 
 
 const handleOnDown = e => track.dataset.mouseDownAt = e.clientX;
