@@ -4,41 +4,150 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <link rel ="stylesheet" href="styles.css"/>
-    <body>
-        
-
-        <section id = "header">
-            <a href ="#"><img src="Images/Abacus.png" class="logo" alt="abacus" width="250px" user-select: none; draggable="false" onmousedown="return false"></a>
-
-        <div class="dropdown" onmousedown="return false">
-            <a id="Options">Options</a>
-            <div class="dropdown-content">
-              <a href="Home.html">Home</a>
-              <a href="Catalogue.html">Shop</a>
-              <a href="Inspiration.html">Inspirations</a>
-              <a href="AboutUs.html">About Us</a>
+    <link rel="stylesheet" href = "style2.css">
+    <title>Abacus Home</title>
+</head>
+<body>
+    <nav>
+        <div class="navTop">
+            <div class="navItem">
+                <img src="Images/Abacus.png" width="200" height="80" alt="">
             </div>
-          </div>
-        </section>
+            <div class = search>
+                <input type="text" placeholder="Search..." class="searchInput">
+                <img src="Images/search.png" width="20" height="20" alt="" class="searchIcon">
+            </div>
+            
+            
+            <!--THIS IS THE Dropdown List-->
+            <div class="dropdown" onmousedown="return false">
+                <a id="Options">Options</a>
+                <div class="dropdown-content">
+                  <a href="Home.html">Home</a>
+                  <a href="Catalogue.html">Shop</a>
+                  <a href="Inspiration.html">Inspirations</a>
+                  <a href="AboutUs.html">About Us</a>
+                </div>
+              </div>
+        </div>
+
+        <!--THIS IS THE Header Section-->
+        <div class="navBottom">
+            <h3 class ="menuItem">VARMBLIXT</h3>
+            <h3 class ="menuItem">BLAVINGAD</h3>
+            <h3 class ="menuItem">OBEGRANSAD</h3>
+            <h3 class ="menuItem">BYGGLEK</h3>
+        </div>
+    </nav>
+
+    <!--THIS IS THE Products Section-->
+    <div class="slider">
+        <div class = "sliderWrapper">
+            <div class = "sliderItem">
+                <img src="Images/Photo2.png" draggable="false"  width="500px" alt="" class="sliderImg">
+                <div class = "slideBG"></div>
+                <h1 class="sliderTitle">NEW <br> VARMBLIXT <br> COLLECTION </h1>
+                <h2 class="sliderPrice">From $89.90</h2>
+                <button class="buybutton">BUY NOW!</button>
+            </div>
+            <div class = "sliderItem">
+                <img src="Images/BLAVINGAD.png" draggable="false" width="500px" height="667px" alt="" class="sliderImg">
+                <div class = "slideBG"></div>
+                <h1 class="sliderTitle">NEW <br> BLAVINGAD <br> COLLECTION </h1>
+                <h2 class="sliderPrice">From $69.90</h2>
+                <button class="buybutton">BUY NOW!</button>
+            </div>
+            <div class = "sliderItem">
+                <img src="Images/OBEGRANSAD.png" draggable="false" alt="" class="sliderImg">
+                <div class = "slideBG"></div>
+                <h1 class="sliderTitle">NEW <br> OBEGRANSAD <br> COLLECTION </h1>
+                <h2 class="sliderPrice">From $129.90</h2>
+                <button class="buybutton">BUY NOW!</button>
+            </div>
+            <div class = "sliderItem">
+                <img src="Images/BYGGLEK.png" draggable="false" width="500px" height="667px" alt="" class="sliderImg">
+                <div class = "slideBG"></div>
+                <h1 class="sliderTitle">NEW <br> BYGGLEK <br> COLLECTION </h1>
+                <h2 class="sliderPrice">From $89.90</h2>
+                <button class="buybutton">BUY NOW!</button>
+            </div>
+        </div>
+    </div>
+
+    <!--THIS IS THE Features Section-->
+    <div class="features">
+        <div class="feature">
+            <img src="/Images/Shipping/shipping.png" draggable="false" width="150vw" height="100vw"  alt="" class="featureImg">
+            <span class="feautureTitle">Free Shipping</span>
+            <span class="featuredDesc">Free worldwide <br> Shipping on all products!</span>
+        </div>
+        <div class="feature">
+            <img src="/Images/Shipping/return.png" draggable="false" width="100vw" height="100vw"  alt="" class="featureImg">
+            <span class="feautureTitle">30 DAYS RETURN</span>
+            <span class="featuredDesc">No questions <br> return and easy refund in 14 days!</span>
+        </div>
+        <div class="feature">
+            <img src="/Images/Shipping/gift.png" draggable="false" width="100vw" height="100vw"  alt="" class="featureImg">
+            <span class="feautureTitle">GIFT CARDS</span>
+            <span class="featuredDesc">Buy Gift Cards for <br> your loved ones easily!</span>
+        </div>
+        <div class="feature">
+            <img src="/Images/Shipping/contact.png" draggable="false" width="100vw" height="100vw" alt="" class="featureImg">
+            <span class="feautureTitle">CONTACT US</span>
+            <span class="featuredDesc">Keep in touch <br> via email!</span>
+        </div>
+    </div>
+    <div class="product">
+        <img src="/Images/" alt="" class="productImg">
+    </div>
 
 
+    <!--THIS IS THE FOOTER-->
+    <footer>
+        <div class="footerLeft">
+            <div class="footerMenu">
+                <h1 class="fMenuTitle">About us</h1>
+                <ul class="fMenuList">
+                    <li class="fListItem">Company</li>
+                    <li class="fListItem">Contact</li>
+                    <li class="fListItem">Career</li>
+                    <li class="fListItem">Affilliates</li>
+                    <li class="fListItem">Stores</li>
+                </ul>
+            </div>
+            <div class="footerMenu">
+                <h1 class="fMenuTitle">Useful Links</h1>
+                <ul class="fMenuList">
+                    <li class="fListItem">Support</li>
+                    <li class="fListItem">Refund</li>
+                    <li class="fListItem">FAQ</li>
+                    <li class="fListItem">Feedback</li>
+                    <li class="fListItem">Stories</li>
+                </ul>
+            </div>
+            <div class="footerMenu">
+                <h1 class="fMenuTitle">Products</h1>
+                <ul class="fMenuList">
+                    <li class="fListItem">VARMBLIXT</li>
+                    <li class="fListItem">BLAVINGAD</li>
+                    <li class="fListItem">OBEGRANSAD</li>
+                    <li class="fListItem">BYGGLEK</li>
+                </ul>
+            </div>
+            <div class="footerMenu">
+                <h1 class="fMenuTitle">About us</h1>
+                <ul class="fMenuList">
+                    <li class="fListItem">Company</li>
+                    <li class="fListItem">Contact</li>
+                    <li class="fListItem">Career</li>
+                    <li class="fListItem">Affilliates</li>
+                    <li class="fListItem">Stores</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footerRight"></div>
+    </footer>
 
-        <div id="image-track" data-mouse-down-at="0" data-prev-percentage="0" >
-            <img class="image" src="Images/Varmblixt.png" draggable="false" />
-            <img class="image" src="Images/Photo2.png" draggable="false" />
-            <img class="image" src="Images/photo3.png" draggable="false" />
-            <img class="image" src="Images/photo4.png" draggable="false" />
-            <img class="image" src="Images/photo5.png" draggable="false" />
-            <img class="image" src="Images/photo6.png" draggable="false" />
-            <img class="image" src="Images/photo7.png" draggable="false" />
-            <p class="text2">Explore Other Possibilities! <a href="Catalogue.html" style="text-decoration: none; color: burlywood;" >Here</a></p>
-          </div>
-
-
-
-        
-        <script src="script.js"></script>
-    </body>
+    <script src="script.js"></script>
+</body>
 </html>

@@ -16,6 +16,17 @@ nav{
     align-items: center;
     justify-content:space-between;
 }
+.navBottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.menuItem{
+    margin-right: 1vh;
+    cursor: pointer;
+    color:white;
+    font-weight: 400;
+}
 
 .search{
     display: flex;
@@ -39,7 +50,7 @@ nav{
 
 .dropdown-content {
     display: none;
-    right: 20px;
+    right: 15%;
     top: 90px;
     position: absolute;
     background-color: black;
@@ -54,10 +65,21 @@ nav{
     transition: all 1s ease-in-out;
     animation: dropdown-content-animation 1s ease-in-out;
   }
+  
+  @keyframes dropdown-content-animation {
+    from {
+      transform: translateY(-20px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
 
-  .dropdown a {
+.dropdown a {
     color: white;
-    font-size: 30px;
+    font-size: 3vh;
     padding: 20px 16px;
     text-decoration: none;
     display: block;
@@ -67,3 +89,133 @@ nav{
     display: block;
     opacity: 1;
   }
+
+body{
+
+}
+
+.slider{
+    /*background-color: black;*/
+    overflow: hidden;
+}
+
+h1{
+}
+h2{
+}
+.sliderWrapper{
+    display: flex;
+    width: 500vw;
+    transition: all 1.5s ease-in-out;
+}
+
+.sliderItem{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.buybutton{
+    position:absolute;
+    font-size: 2vh;
+    left: 50%;
+    top: 48%;
+    text-align: center;
+    border: 1px solid grey;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.buybutton:hover{
+    background-color: black;
+    color: white;
+}
+.sliderTitle{
+    position: absolute;
+    font-size: 4vh;
+    top: 14vh;
+}
+
+.sliderPrice{
+    position: absolute;
+    bottom:12vh;
+    top: 29vh;
+    left: 48%;
+}
+
+.slideBg{
+    width: 500px;
+    height: 500px;
+}
+
+.sliderItem:nth-child(1){
+    background-color:rgb(142,170,109,255);
+}
+
+.sliderItem:nth-child(2){
+    background-color:rgb(0,57,131,255);
+}
+
+
+.sliderItem:nth-child(3){
+    background-color:rgb(211,211,211);
+}
+
+.sliderItem:nth-child(4){
+    background-image: url("Images/Background/blackbg-withstars.png");
+}
+
+.sliderItem:nth-child(1) .sliderPrice{
+    color:white;
+}
+.sliderItem:nth-child(1) .sliderTitle{
+    color:white;
+}
+.sliderItem:nth-child(2) .sliderPrice{
+    color:rgb(255, 0, 0);
+}
+.sliderItem:nth-child(2) .sliderTitle{
+    color:rgb(255, 0, 0);
+}
+
+.sliderItem:nth-child(3) .sliderPrice{
+    color:rgb(221, 72, 27);
+}
+.sliderItem:nth-child(3) .sliderTitle{
+    color:rgb(221, 72, 27);
+}
+
+
+.sliderItem:nth-child(4) .sliderPrice{
+    color:rgb(255, 0, 0);
+}
+.sliderItem:nth-child(4) .sliderTitle{
+    color:rgb(109, 143, 255);
+}
+
+
+.features{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2vh;
+}
+
+.feature{
+    display: flex;
+    flex-direction: column;
+    align-self:center;
+}
+.feautureTitle{
+    font-size: 20px;
+    font-weight: 600;
+    margin: 2px;
+    color: green;
+}
+
+.featuredDesc{
+    margin: 1px;
+    color: green;
+}

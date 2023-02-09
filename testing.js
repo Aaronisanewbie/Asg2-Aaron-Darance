@@ -43,35 +43,3 @@ window.ontouchend = e => handleOnUp(e.touches[0]);
 window.onmousemove = e => handleOnMove(e);
 
 window.ontouchmove = e => handleOnMove(e.touches[0]);
-
-
-<script>
-  function scrollToCategory(category) {
-    const categoryElement = document.getElementById(category);
-    categoryElement.scrollIntoView({behavior: "smooth"});
-  }
-</script>
-
-<select onchange="scrollToCategory(this.value)">
-  <option value="">Categories</option>
-  <option value="allProducts">All Products</option>
-  <option value="popular">Popular</option>
-  <option value="category2">New Arrivals</option>
-  <!-- Add more options here -->
-</select>
-
-<!-- Add your categories below, make sure to give each a unique id -->
-<div id="allProducts">
-  <h2>All Products</h2>
-  <!-- Add your product content here -->
-</div>
-
-<div id="category1">
-  <h2>Category 1</h2>
-  <!-- Add your product content here -->
-</div>
-
-<div id="category2">
-  <h2>Category 2</h2>
-  <!-- Add your product content here -->
-</div>

@@ -1,30 +1,14 @@
-const wheel = document.getElementById("wheel");
-const spinButton = document.querySelector(".spin-button");
-const message = document.getElementById("message");
-const result = document.getElementById("result");
-const spinAgainButton = document.getElementById("spin-again");
+const spinButton = document.querySelector("#spin-button");
+const result = document.querySelector("#result");
+const wheel = document.querySelector(".wheel");
 
-let degrees = 0;
-let results = [
-  "Winning slice 1",
-  "Winning slice 2",
-  "Winning slice 3",
-  "Winning slice 4",
-  "Winning slice 5",
-  "Winning slice 6",
-];
+spinButton.addEventListener("click", function() {
+  let randomDegree = Math.floor(Math.random() * 360);
+  wheel.style.transform = `rotate(${randomDegree}deg)`;
 
-spinButton.addEventListener("click", () => {
-  degrees = Math.floor(Math.random() * 360 + 720);
-  wheel.style.transform = `rotate(${degrees}deg)`;
-  setTimeout(() => {
-    message.style.display = "block";
-    let winningSlice = Math.floor(degrees / 60);
-    result.textContent = results[winningSlice % 6];
-  }, 4000);
-});
+  let rewards = [1, 2, 3, 4, 5, 6];
+  let sliceDegree = 360 / rewards.length;
 
-spinAgainButton.addEventListener("click", () => {
-  wheel.style.transform = `rotate(0deg)`;
-  message.style.display = "none";
+  let resultIndex = Math.floor(randomDegree / sliceDegree);
+  result.textContent = `You won: ${rewards[resultIndex]}`;
 });
