@@ -50,8 +50,8 @@ nav{
 
 .dropdown-content {
     display: none;
-    right: 15%;
-    top: 90px;
+    right: 2%;
+    top: 10%;
     position: absolute;
     background-color: black;
     border: 1px solid white;
