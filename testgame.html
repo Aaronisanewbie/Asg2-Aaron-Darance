@@ -4,21 +4,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us</title>
+    <title>Memory Game!</title>
     <link rel ="stylesheet" href="testgame.css"/>
   </head>
   <body>
-    <section id="header">
-      <a href="#"><img src="Images/Abacus.png" class="logo" alt="abacus" width="250px" user-select: none; draggable="false" onmousedown="return false"></a>
-      <div class="dropdown" onmousedown="return false">
-        <a id="Options">Options</a>
-        <div class="dropdown-content">
-          <a href="Home.html">Home</a>
-          <a href="Inspiration.html">Inspirations</a>
-          <a href="AboutUs.html">About Us</a>
-        </div>
+    <div class="navTop">
+      <div class="navItem">
+          <img src="Images/Abacus.png" width="120" height="50" alt="">
       </div>
-      <div class="memory">Memory Game!</div>
+      
+      
+      <!--THIS IS THE Dropdown List-->
+      <div class="dropdown" onmousedown="return false">
+          <a id="Options">Options</a>
+          <div class="dropdown-content">
+            <a href="Home.html">Home</a>
+            <a href="testgame.html">Games</a>
+            <a href="Inspiration.html">Inspirations</a>
+            <a href="AboutUs.html">About Us</a>
+          </div>
+        </div>
+
+
+      <div class="memory">Memory Match Game!</div>
     </section>
     <div class="board">
       <div class="card" data-card="A">
@@ -71,13 +79,61 @@
       </div>
     </div>
 
-    <script src="testgame.js"></script>
   </body>
+</div>
   <footer>
-    <nav>
-      <a href="Home.html">Home</a>
-      <a href="AboutUs.html">About Us</a>
-      <a href="Inspiration.html">Inspirations</a>
-    </nav>
-  </footer>
+    <div class="footerLeft">
+        <div class="footerMenu">
+            <h1 class="fMenuTitle">About us</h1>
+            <ul class="fList">
+                <li class="fListItem">Company</li>
+                <li class="fListItem">Contact</li>
+                <li class="fListItem">Career</li>
+                <li class="fListItem">Affilliates</li>
+                <li class="fListItem">Stores</li>
+            </ul>
+        </div>
+        <div class="footerMenu">
+            <h1 class="fMenuTitle">Useful Links</h1>
+            <ul class="fList">
+                <li class="fListItem">Support</li>
+                <li class="fListItem">Refund</li>
+                <li class="fListItem">FAQ</li>
+                <li class="fListItem">Feedback</li>
+                <li class="fListItem">Stories</li>
+            </ul>
+        </div>
+        <div class="footerMenu">
+            <h1 class="fMenuTitle">Products</h1>
+            <ul class="fList">
+                <li class="fListItem">VARMBLIXT</li>
+                <li class="fListItem">BLAVINGAD</li>
+                <li class="fListItem">OBEGRANSAD</li>
+                <li class="fListItem">BYGGLEK</li>
+            </ul>
+        </div>
+    </div>
+    <div class="footerRight">
+        <div class="footerRightMenu">
+            <h1 class="fMenuTitle">Subscribe to our newsletter</h1>
+            <div class="fMail">
+                <input type="text" placeholder="your@email.com" class="fInput">
+                <button class="fButton">Join!</button>
+            </div>
+        </div>
+        <div class="footerRightMenu">
+            <h1 class="fMenuTitle">Follow Us!</h1>
+            <div class="fIcons">
+                <img src="/Icons/fbicon.png" alt="" class="fIcon">
+                <img src="/Icons/twticon.png" alt="" class="fIcon">
+                <img src="/Icons/instaicon.png" alt="" class="fIcon">
+                <img src="/Icons/whatsappicon.png" alt="" class="fIcon">
+            </div>
+        </div>
+        <div class="footerRightMenu">
+            <span class="copyright">@Abacus Inc. ALl rights reserved. 2022.</span>
+        </div>
+    </div>
+    <script src="testgame.js"></script>
+</footer>
 </html>

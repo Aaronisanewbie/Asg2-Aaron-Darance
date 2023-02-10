@@ -8,6 +8,19 @@
     margin: 0rem;
     overflow: hidden;
   }
+
+  body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+nav{
+    background-color: black;
+    color: white;
+    padding: 20px 50px;
+}
+
   
   #image-track {
     display: flex;
@@ -128,7 +141,7 @@ h1{
 
 
 #Options{
-    margin-right: -60px;
+    margin-right: -50px;
     margin-top: 1vh;
     font-size: 4vh;
 }
@@ -137,22 +150,24 @@ h1{
     color: white;
 }
 .dropdown-content {
-    display: none;
-    right: -90px;
-    top: 90px;
-    position: absolute;
-    background-color: black;
-    border: 1px solid white;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    width: 300x;
-    height: 300px;
-    border-radius: 10px;
-    z-index: 3;
-    text-align: center;
-    opacity: 0;
-    transition: all 1s ease-in-out;
-    animation: dropdown-content-animation 1s ease-in-out;
-  }
+  display: none;
+  right: 1%;
+  top: 8%;
+  position: absolute;
+  background-color: black;
+  border: 1px solid white;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  width: 200px;
+  height: 300px;
+  border-radius: 10px;
+  z-index: 3;
+  text-align: center;
+  opacity: 0;
+  transition: all 1s ease-in-out;
+  animation: dropdown-content-animation 1s ease-in-out;
+  right:-90px;
+  top:80px
+}
   
   @keyframes dropdown-content-animation {
     from {
@@ -165,9 +180,10 @@ h1{
     }
   }
 
-.dropdown a {
+
+  .dropdown a {
     color: white;
-    font-size: 30px;
+    font-size: 4vh;
     padding: 20px 16px;
     text-decoration: none;
     display: block;
@@ -177,6 +193,7 @@ h1{
     display: block;
     opacity: 1;
   }
+
 
 .backgroundimg {
     background-color: black;
@@ -257,13 +274,17 @@ p {
   text-align: left;
   margin-top: 150px;
   margin-right: 50px;
+  margin-left: 50px;
 }
 
 .desc4 {
   font-size: xx-large;
   text-align: center;
-  margin-top: 50px;
+  margin-top: 20px;
   margin-bottom: 50px;
+  margin-left: 20px;
+  margin-right:20px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .container {
@@ -295,7 +316,7 @@ p {
 }
 
 footer {
-  background-color: #333;
+  background-color: black;
   color: #fff;
   display: flex;
   justify-content: center;
@@ -303,6 +324,7 @@ footer {
   height: 60px;
   font-size: 16px;
   font-family: 'Times New Roman', Times, serif;
+  margin-top: 10px;
 }
 
 footer a {
@@ -313,4 +335,104 @@ footer a {
 
 footer a:hover {
   color: #ccc;
+}
+
+.header-image2 {
+  max-width: 50%;
+  height: auto;
+  width: auto;
+  display: block;
+  margin-bottom: 20px;
+  object-position: center;
+  margin-top: 150px;
+}
+
+.image-section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.image-container {
+  text-align: center;
+  width: 30%;
+}
+
+.image-text {
+  margin-top: 10px;
+}
+
+.images-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.images-container img {
+  width: 66.66%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .images-container img {
+    width: 50%;
+  }
+}
+
+@media (max-width: 576px) {
+  .images-container img {
+    width: 100%;
+  }
+}
+
+.image-block {
+  text-align: center;
+  width: 30%;
+}
+.image-block img {
+  margin: 10px 0;
+  left: 50px;
+  right: 50px;
+}
+
+.desc5 {
+  font-size: xx-large;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.para1 {
+  font-size: x-large;
+  font-weight: bolder;
+  margin-bottom: 100px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.images1{
+  width: 70%;
+  height: 70%;
+  margin-right: 20px;
+  margin-left: 50px;
+  margin-top: 150px;
+}
+
+.images2{
+  width: 70%;
+  height: 70%;
+  margin-right: 20px;
+  margin-left: 50px;
+  margin-top: 150px;
+}
+.images3{
+  width: 70%;
+  height: 70%;
+  margin-right: 20px;
+  margin-left: 50px;
+  margin-top: 150px;
+}
+
+h2 {
+  margin-top: 100px;
+  font-size: xx-large;
+  font-family: Verdana, Geneva, Tahoma, sans-serif ;
 }

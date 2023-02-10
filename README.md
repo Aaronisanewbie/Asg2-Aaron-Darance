@@ -2,17 +2,17 @@
 
 # Project Abacus
 
-This Project showcases many furnitures desinged by a Swedish multinational conglomerate based in the Netherlands that designs and sells ready-to-assemble furniture, kitchen appliances, decoration, home accessories, and various other goods and home services.
+This Project showcases many furniture sets such as ready-to-assemble furniture, kitchen appliances, decoration, home accessories, and various other goods and home services.
 
 
 # Design Process
 
 The general target customers would be young adults as they would typically spend more.
+Wanted to make the website simplistic.
 
 # Features
 
-Able to resize the resolution
-When hyperlinks on top of the menu bar are hovered around, they will be underlined.
+Users can navigate through various pages
 
 Menu bar is included for mobile versions
 
@@ -25,3 +25,6 @@ Java , CSS & HTML
 Photos and some context were used from IKEA.
 Background Images/Icons were used from Shutterstock.
 I received inspiration from its minimalistic colour choice and layout.
+
+# GitHub Link
+https://github.com/Aaronisanewbie/Asg2-Aaron-Darance.git

@@ -1,3 +1,5 @@
+
+
 const wrapper = document.querySelector(".sliderWrapper")
 const menuItems = document.querySelectorAll(".menuItem")
 
@@ -17,7 +19,6 @@ const currentProductQuantity = document.querySelector(".Quantities");
 
 
 
-
 menuItems.forEach((item,index)=>{
   item.addEventListener("click", () =>{
     console.log("you clicked!" + index);
@@ -34,11 +35,12 @@ menuItems.forEach((item,index)=>{
 
   })
 })
-
-
+ const payButton = document.querySelector(".payButton");
 const productButton = document.querySelector(".ProductButton");
 const payment = document.querySelector(".payment");
 const Close = document.querySelector(".close");
+const fButton = document.querySelector(".fButton");
+const fInput = document.querySelector(".fInput");
 
 productButton.addEventListener("click",()=>{
   payment.style.display="flex"
@@ -47,3 +49,20 @@ productButton.addEventListener("click",()=>{
 Close.addEventListener("click",()=>{
   payment.style.display="none"
 })
+
+payButton.addEventListener("click",()=>{
+  payment.style.display="none"
+  alert("Thank you Purchasing with Us! Hope to see you again!");
+})
+
+fButton.addEventListener("click",()=>{
+  if(fInput.value === ""){
+    alert("Please enter your email address")
+  }
+  else{
+    alert("Thank you for signing up!");
+    fInput.value="";
+  }
+  
+})
+
