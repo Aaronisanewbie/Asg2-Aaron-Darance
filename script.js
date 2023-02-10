@@ -35,7 +35,7 @@ menuItems.forEach((item,index)=>{
 
   })
 })
- const payButton = document.querySelector(".payButton");
+const payButton = document.querySelector(".payButton");
 const productButton = document.querySelector(".ProductButton");
 const payment = document.querySelector(".payment");
 const Close = document.querySelector(".close");
@@ -66,7 +66,11 @@ fButton.addEventListener("click",()=>{
   
 })
 
-var jsondata = {"field1": "xyz","field2": "abc"};
+var nameSurname = document.querySelector(".payTitle").value;
+var phoneNumber = document.querySelector(".payInput[placeholder='+12345678']").value;
+var address = document.querySelector(".payInput[placeholder='John Doe']").value;
+
+var jsondata = {name: nameSurname,number: phoneNumber, address: address};
 var settings = {
   "async": true,
   "crossDomain": true,
