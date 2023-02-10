@@ -1,3 +1,6 @@
+html{
+    scroll-behavior: smooth;
+}
 body{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     padding: 0;
@@ -17,6 +20,7 @@ nav{
     justify-content:space-between;
 }
 .navBottom{
+    font-size: 2vh;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -28,13 +32,7 @@ nav{
     font-weight: 400;
 }
 
-.search{
-    display: flex;
-    align-items: center;
-    background-color: gray;
-    padding: 10px 20px;
-    border-radius: 10px;
-}
+
 
 .searchInput{
     border: none;
@@ -57,7 +55,7 @@ nav{
     border: 1px solid white;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     width: 300x;
-    height: 330px;
+    height: 35%;
     border-radius: 10px;
     z-index: 3;
     text-align: center;
@@ -119,30 +117,34 @@ h2{
 
 .buybutton{
     position:absolute;
-    font-size: 2vh;
-    left: 50%;
-    top: 62%;
-    text-align: center;
+    font-size: 4vh;
+    right: 19%;
+    top: 52%;
     border: 1px solid grey;
     z-index: 1;
     cursor: pointer;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .buybutton:hover{
     background-color: black;
     color: white;
 }
+
+
 .sliderTitle{
     position: absolute;
     font-size: 4vh;
-    top: 14vh;
+    top: 19vh;
+    right: 19%;
 }
 
 .sliderPrice{
     position: absolute;
-    bottom:12vh;
-    top: 29vh;
-    left: 48%;
+    top: 33vh;
+    right: 19%;
+    font-size: 4vh;
+    font-weight: 600;
 }
 
 .slideBg{
@@ -151,7 +153,7 @@ h2{
 }
 
 .sliderItem:nth-child(1){
-    background-color:rgb(142,170,109,255);
+    background-color:rgb(206,181,151,255);
 }
 
 .sliderItem:nth-child(2){
@@ -192,7 +194,7 @@ h2{
     color:rgb(255, 0, 0);
 }
 .sliderItem:nth-child(4) .sliderTitle{
-    color:rgb(109, 143, 255);
+    color:rgb(255, 0, 0);
 }
 
 
@@ -218,4 +220,262 @@ h2{
 .featuredDesc{
     margin: 1px;
     color: green;
+}
+
+.product{
+    height: 100vh;
+    background-color: whitesmoke;
+    position: relative;
+}
+
+.productImg{
+    max-width: 30%;
+    margin-left: 10%;
+}
+
+.productDetails{
+    position: absolute;
+    top: 10%;
+    right: 0;
+    width: 50%;
+    padding: 50px ;
+}
+
+.productTitle{
+    font-size: 7vh;
+    font-weight: 600;
+}
+
+.productDesc{
+    font-size: 24px;
+    color: gray;
+}
+
+.Quantities,.quantity{
+    display: flex;
+}
+
+.ProductButton{
+    align-self: center;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    font-weight: 600;
+    font-size: 2vh;
+    cursor: pointer;
+}
+
+
+.payment{
+    width: 500px;
+    height: 700px;
+    background-color: white;
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    padding: 10px 50px;
+    display: none;
+    flex-direction: column;
+    -webkit-box-shadow: -9px 10px 21px -4px rgba(0,0,0,0.9);
+    -moz-box-shadow: -9px 10px 21px -4px rgba(0,0,0,0.79);
+}
+
+
+.payTitle{
+    font-size: 30px;
+    color: lightblue;
+}
+
+label{
+    font-size: 25px;
+    font-weight: 300;
+}
+
+.payInput{
+    padding: 10px;
+    margin: 10px 0px;
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+.payInput::placeholder{
+    color: grey;
+}
+
+.cardIcons{
+    display: flex;
+}
+
+.cardIcon{
+    margin-right: 10px;
+    justify-content: space-between;
+}
+
+.sm{
+    width: 30%;
+}
+
+
+.payButton{
+    position: absolute;
+    height: 40px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: green;
+    color: white;
+    border: none;
+    cursor:pointer;
+}
+
+.close{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    background-color: grey;
+    color: white;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 2px;
+}
+
+footer{
+    display: flex;
+
+}
+.footerLeft{
+    flex: 2;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px ;
+}
+
+.fMenuTitle{
+    font-size: 26px;
+}
+
+.fList{
+    padding: 0;
+    list-style: none;
+}
+.fListItem{
+    color: gray;
+    cursor: pointer;
+}
+
+.footerRight{
+    flex: 1;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.fInput{
+    padding: 5px;
+}
+
+.fButton{
+    padding: 5px;
+    background-color: black;
+    color: white;
+}
+
+.fIcons{
+    display: flex;
+}
+
+.fIcon{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.copyright{
+    font-weight: 300;
+    font-size: 14px;
+}
+
+@media screen and (max-width:480px) {
+    nav{
+        padding: 20px;
+    }
+    .search{
+        display: none;
+    }
+    .navBottom{
+        flex-wrap: wrap;
+    }
+
+    .menuItem{
+        margin: 20px;
+        font-weight: 700;
+        font-size: 14px;
+    }
+
+    .slider{
+        clip-path: none;
+    }
+    .sliderImg{
+        width: 100%;
+    }
+    .sliderBg{
+        width: 100%;
+    }
+    .sliderBg{
+        width: 100%;
+        height: 100%;
+    }
+
+    .sliderTitle{
+        display: none;
+    }
+
+    .sliderPrice{
+        right: 28%;
+        top: 36%;
+    }
+
+    .buybutton{
+        position:absolute;
+        font-size: 4vh;
+        right: 30%;
+        top: 45%;
+    }
+
+    .features{
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        padding: 50px;
+    }
+    .product{
+        clip-path: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .productDetails{
+        width: 100%;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .productTitle{
+        font-size: 50px;
+        margin: 0;
+        bottom: 15px;
+    }
+
 }
